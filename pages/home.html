@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="shortcut icon" href="../assets/images/logotipo.PNG" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3ed6284a33.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <article class="header__article">
+                <img src="../assets/images/logotipo.PNG" alt="" class="header__img">
+            </article>
+            <nav class="header__nav">
+                <a class="header__link" href="#inicio">Inicio</a>
+                <a class="header__link" href="#servicios">Servicios</a>
+                <a class="header__link" href="#contacto">Contacto</a>
+            </nav>
+            <article class="header__log">
+                <span class="header__link" id="header__enl">LOG IN</span>
+                <i class="fa-solid fa-magnifying-glass header__link"></i>
+                <i class="fa-solid fa-bag-shopping header__link"></i>
+            </article>
+
+            <section class="section__log ocultar" id="section__log">
+                <a href="#"><i id="login__close" class="login__close fa-solid fa-xmark"></i></a>
+                <p class="login__title">Iniciar Sesión</p>
+                <input class="log__input" type="text" name="user" id="user" placeholder="Usuario..."><br>
+                <input class="log__input" type="password" name="pass" id="pass" placeholder="Contraseña..."><br>
+                <button class="log__button" id="login__link">Iniciar Sesión</button>
+                <a class="login__link" href="#">No estoy registrado</a>
+            </section>
+        </header>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>
