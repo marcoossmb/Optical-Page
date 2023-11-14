@@ -10,21 +10,26 @@
 </head>
 <body>
     <div class="container">
+        <!-- INICIO DEL HEADER -->
         <header class="header">
-            <article class="header__article">
-                <img src="../assets/images/logotipo.PNG" alt="" class="header__img">
-            </article>
-            <nav class="header__nav">
-                <a class="header__link" href="#inicio">Inicio</a>
-                <a class="header__link" href="#servicios">Servicios</a>
-                <a class="header__link" href="#contacto">Contacto</a>
-            </nav>
-            <article class="header__log">
-                <span class="header__link" id="header__enl">LOG IN</span>
-                <i class="fa-solid fa-magnifying-glass header__link"></i>
-                <i class="fa-solid fa-bag-shopping header__link"></i>
-            </article>
+            <!-- Menú barra superior -->
+            <section class="header__marg">
+                <article class="header__article">
+                    <img src="../assets/images/logotipo.PNG" alt="" class="header__img">
+                </article>
+                <nav class="header__nav">
+                    <a class="header__link" href="#inicio">Inicio</a>
+                    <a class="header__link" href="#servicios">Servicios</a>
+                    <a class="header__link" href="#contacto">Contacto</a>
+                </nav>
+                <article class="header__log">
+                    <span class="header__link" id="header__enl">LOG IN</span>
+                    <i class="fa-solid fa-magnifying-glass header__link" id="header__search"></i>
+                    <i class="fa-solid fa-bag-shopping header__link"></i>
+                </article>
+            </section>
 
+            <!-- Sección que aparece con evento para iniciar sesión -->
             <section class="section__log ocultar" id="section__log">
                 <a href="#"><i id="login__close" class="login__close fa-solid fa-xmark"></i></a>
                 <p class="login__title">Iniciar Sesión</p>
@@ -33,7 +38,98 @@
                 <button class="log__button" id="login__link">Iniciar Sesión</button>
                 <a class="login__link" href="#">No estoy registrado</a>
             </section>
+
+            <!-- Sección que aparece con evento como buscador -->
+            <section class="section__buscar ocultar" id="section__buscar">
+                <input class="log__input" type="text" name="search" id="search" placeholder="Buscar..."><br>
+            </section>
         </header>
+        <!-- FIN DEL HEADER -->
+
+        <!-- INICIO DEL MAIN -->
+        <main class="main">
+            <section class="main__publi">
+                <div class="publi__content">
+                    <h2>BRANDS YOUR LOVE</h2>
+                    <p>Explora la nitidez con estilo.</p>
+                    <button class="log__button">Leer mas...</button>
+                </div>               
+            </section>
+
+            <section class="main__winter">
+                <article class="winter__vision">
+                    <img src="../assets/images/winter-glasses.jpg" alt="" class="winter__img">
+                </article>
+                <article class="winter__eslogan">
+                    <h3 class="winter__h3 winter__h3--first">GET READY</h3>
+                    <h3 class="winter__h3">FOR WINTER</h3>
+                </article>
+                <article class="winter__info">
+                    <p class="winter__text">Las gafas son más que un accesorio; son esenciales para quienes ven el mundo con claridad. No solo mejoran la visión, sino que también enriquecen cada detalle de la vida diaria. Un imprescindible para vivir con nitidez.</p>
+                    <button class="winter__button">Entrar</button>
+                </article>
+            </section>
+
+            <section class="main__targets">
+                <h3 class="targets__h3">Productos Nuevos</h3>
+                <div class="target__box">
+                    <div class="target__card">
+                        <img class="target__image" src="../assets/images/gafa1.png" alt="">
+                        <p class="target__text">Ray-Ban</p>
+                        <span class="target__price">Precio: 20.00€</span>
+                    </div>
+                
+                    <div class="target__card">
+                        <img class="target__image" src="../assets/images/gafa2.png" alt="">
+                        <p class="target__text">Oakley</p>
+                        <span class="target__price">Precio: 25.00€</span>
+                    </div>
+                
+                    <div class="target__card">
+                        <img class="target__image" src="../assets/images/gafa3.png" alt="">
+                        <p class="target__text">Persol</p>
+                        <span class="target__price">Precio: 30.00€</span>
+                    </div>
+                
+                    <div class="target__card">
+                        <img class="target__image" src="../assets/images/gafa4.png" alt="">
+                        <p class="target__text">Maui Jim</p>
+                        <span class="target__price">Precio: 15.00€</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- FIN DEL MAIN -->
+
+        <!-- INICIO DEL FOOTER -->
+        <footer class="footer">
+            <div class="footer__marg">
+                <article class="footer__info">
+                    <p>+34 612 34 56 78</p>
+                    <p>info@opticaluminar.com</p>
+                    <div class="footer__social">
+                        <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram social__link"></i></a>
+                    <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-x-twitter social__link"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook social__link"></i></a>
+                    </div>
+                </article>
+                <article class="footer__info">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24465.287513266318!2d-4.849240596303293!3d39.96015432163737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd401c8ed0fe010d%3A0x1a24f99d9c20899d!2s45600%20Talavera%20de%20la%20Reina%2C%20Toledo!5e0!3m2!1ses!2ses!4v1699964210448!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+                <article class="footer__info">
+                    <p class="info__first">Nosotros</p>
+                    <a class="info__Link" href="../index.html">Inicio</a>
+                    <a class="info__Link" href="../pages/registro.html">Saber Más</a>
+                </article>
+                <article class="footer__info footer__info--sub">
+                    <p class="info__first">Suscribete</p>
+                    <p>Para próximas Novedades</p>
+                    <p>Para conseguir tickets</p>
+                    <p>Para obtener descuentos</p>
+                </article>
+            </div>
+        </footer>
+        <!-- FIN DEL FOOTER -->
     </div>
     <script src="../js/script.js"></script>
 </body>

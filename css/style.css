@@ -101,6 +101,7 @@
     background-color: #DDF2FF;
     padding: 20px;
     border-radius: 10px;
+    transition: background-color 0.5s;
 }
 .main__link:hover{
     color: #DDF2FF;
