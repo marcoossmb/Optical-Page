@@ -1,0 +1,101 @@
+@media screen and (min-width:600px) {
+    .header__img{
+        display: block;
+    }
+    .header__marg{
+        justify-content: space-between;
+    }
+    .header__link:hover{
+        transition: all 1s;
+        font-size: 1.5rem;
+    }
+    .winter__eslogan{
+        position: relative;
+
+        animation-name: movereslogan;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+    @keyframes movereslogan {
+        0%{
+            left: 0;
+        }
+        100%{
+            left: 40%;
+        }
+    }
+}
+
+@media screen and (min-width:706px) {
+    .target__card--last{
+        display: block;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .winter__info{
+        display: block;
+    }
+    .footer__info--nos{
+        display: block;
+        margin-right: 20px;
+    }
+    .winter__eslogan{
+        animation: none;
+    }
+}
+
+@media screen and (min-width:936px) {
+    .target__card--last{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    
+    .header__img, .header__log, .publi__content, .footer__info--sub, .footer__info--nos{
+        display: block;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container{
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: 
+            "header main"
+            "header main"
+            "footer footer";
+    }
+    .header__log{
+        display: none;
+    }
+    .header{
+        position: relative;
+        background: transparent;
+    }
+    .header__marg{
+        flex-direction: column;
+    }
+    .header__img{
+        margin: 50px;
+        width: 150px;
+    }
+    .header__nav{
+        display: flex;
+        flex-direction: column;
+        margin: 150px 0 0 0;
+    }
+    .header__link{
+        border-radius: 0;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.764);
+    }
+    .header__link:hover{
+        background: none;
+        font-weight: bold;
+        transition: all 1s;
+    }
+    .main__publi{
+        margin-top: 50px;
+    }
+}

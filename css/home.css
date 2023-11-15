@@ -5,7 +5,25 @@ body{
 
 .container{
     margin: 0 auto;
-    width: 100%;
+    min-width: 480px;
+    max-width: 1200px;
+	width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
 }
 
 .header {
@@ -22,7 +40,7 @@ body{
     margin: 0 auto;
     max-width: 1080px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 .header__img{
@@ -32,6 +50,7 @@ body{
 
 .header__nav, .header__log{
     font-size: 1.3rem;
+    margin-right: 20px;
 }
 .header__link {
     color: black;
@@ -62,7 +81,7 @@ body{
     border-radius: 10px;
     position: absolute;
     top: 120px;
-    left: 1050px;
+    right: 30px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
 }
@@ -104,7 +123,7 @@ body{
     border-radius: 10px;
     position: absolute;
     top: 120px;
-    left: 1050px;
+    right: 30px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
 }
@@ -114,7 +133,8 @@ body{
 }
 .main__publi{
     margin-top: 110px;
-    height: 600px;
+    height: 300px;
+    width: 90%;
     background-image: url(../assets/images/optica-panoramica.png);
     background-size: cover;
     display: flex;
@@ -136,16 +156,21 @@ body{
     margin-bottom: 100px;
 }
 .winter__img{
-    height: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+.winter__img:hover{
+    transition: transform 1s;
+    transform: scale(1.03);
 }
 
 .winter__eslogan{
-    height: 300px;
+    height: 200px;
     writing-mode: vertical-rl;
     transform: rotateZ(180deg);
 }
 .winter__h3{
-    font-size: 3rem;
+    font-size: 2.3rem;
     margin-left: -50px;
 }
 .winter__h3--first{
@@ -181,9 +206,11 @@ body{
 .target__box{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .target__card{
+    flex: 1 1 100px;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -191,14 +218,17 @@ body{
     height: 200px;
     transition: height 0.7s;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
 }
 .target__card:hover {
     height: 270px;
 }
 .target__card:hover .target__text {
+    transition: all 2s;
     opacity: 1;
 }
 .target__card:hover .target__price {
+    transition: all 2s;
     opacity: 1;
 }
 
@@ -230,7 +260,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 20px 20px;
 }
 .footer__social{
     display: flex;
@@ -252,6 +282,7 @@ body{
 .info__first{
     font-weight: bold;
 }
-.footer__info--sub{
-    margin-top: 55px;
+
+.header__log, .header__img, .publi__content, .winter__info, .footer__info--sub, .footer__info--nos, .target__card--last{
+    display: none;
 }
