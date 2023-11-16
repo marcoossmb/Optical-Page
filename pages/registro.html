@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="shortcut icon" href="../assets/images/logotipo.PNG" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/3ed6284a33.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="container">
+        <section class="main__register">
+            <h1 class="register__h1">Bienvenido de Nuevo</h1>
+            <a target="_blank" href="https://accounts.google.com/" class="register__google">
+                <p>Registarte con Google</p>
+                <i class="fa-brands fa-google"></i>
+            </a>
+            <form action="#" method="POST" class="register__form">
+                <label class="form__label">Nombre:</label>
+                <input class="form__input" type="text" id="nombre" name="nombre" required>
+
+                <label class="form__label">Apellidos:</label>
+                <input class="form__input" type="text" id="apellidos" name="apellidos" required>
+
+                <label class="form__label">Correo Electrónico:</label>
+                <input class="form__input" type="email" id="correo" name="correo" required>
+
+                <label class="form__label">Edad:</label>
+                <input class="form__input" type="number" id="edad" name="edad" required>
+
+                <label class="form__label">Contraseña:</label>
+                <input class="form__input" type="password" id="contrasena" name="contrasena" required>
+
+                <button class="form__button" type="submit">Registrarse</button>
+            </form>
+        </section>
+        <sectiion class="main__image">
+            <img class="register__img" src="../assets/images/register.png" alt="">
+        </sectiion>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+</html>
