@@ -158,9 +158,9 @@ body{
 .winter__img{
     height: 200px;
     border-radius: 5px;
+    transition: transform 1s;
 }
 .winter__img:hover{
-    transition: transform 1s;
     transform: scale(1.03);
 }
 
@@ -246,6 +246,7 @@ body{
     opacity: 0;
 }
 
+/* Footer */
 .footer{ 
     background-color: black;
     color: white;
