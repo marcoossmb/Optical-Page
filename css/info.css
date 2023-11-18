@@ -1,13 +1,14 @@
-body{
+body {
     background-color: whitesmoke;
     font-family: Calibri;
 }
-.container{
+
+.container {
     width: 1200px;
     margin: 0 auto;
-    
 }
-.header{
+
+.header {
     background-color: #250856;
     color: #fff;
     display: flex;
@@ -20,19 +21,50 @@ body{
     font-style: italic;
     padding-bottom: 10px;
 }
-.header__nav{
+
+.header__nav {
     margin: 20px;
 }
-.header__link{
+
+.header__link {
     text-decoration: none;
     color: #250856;
     padding: 10px;
     background-color: #DDF2FF;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-right: 30px;
+    display: inline-block;
+    width: 115px;
+    padding: 0.25rem;
+    margin-top: 0.5rem;
+    position: relative;
+    text-align: center;
+    z-index: 0;
+    overflow: hidden;
 }
 
-.main__serim{
+.header__link:hover {
+    color: white;
+}
+
+.header__link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #5693F2;
+    transition: transform 0.4s;
+    z-index: -1;
+    transform: translateX(100%);
+}
+
+.header__link:hover::after {
+    transform: translateX(0);
+}
+
+.main__serim {
     margin-top: 30px;
     display: flex;
 }
@@ -40,14 +72,16 @@ body{
 .list__li {
     margin-bottom: 10px;
 }
-.main__slider{
+
+.main__slider {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     margin-left: 130px;
 }
-.main__img{
+
+.main__img {
     object-fit: cover;
     width: 300px;
     height: 224px;
@@ -55,53 +89,57 @@ body{
 }
 
 .slider__text {
-  white-space: nowrap;
-  color: white;
-  font-size: 1.25rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    white-space: nowrap;
+    color: white;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .slider__text-container {
-  position: absolute;
-  background-color: #2508566b;
-  overflow: hidden;
-  width: 300px;
-  border-radius: 10px;
-  transition: all 0.8s ease;
+    position: absolute;
+    background-color: #2508566b;
+    overflow: hidden;
+    width: 300px;
+    border-radius: 10px;
+    transition: all 0.8s ease;
 }
 
-.slider__down{
-  height: 0;
-  bottom: 100%;
-}
-.main__slider:hover .slider__down{
-  height: 100%;
-  bottom: 0;
+.slider__down {
+    height: 0;
+    bottom: 100%;
 }
 
-.slider__up{
-  height: 0;
-  top: 100%;
-}
-.main__slider:hover .slider__up{
-  height: 100%;
-  top: 0;
+.main__slider:hover .slider__down {
+    height: 100%;
+    bottom: 0;
 }
 
-.main__horarios{
+.slider__up {
+    height: 0;
+    top: 100%;
+}
+
+.main__slider:hover .slider__up {
+    height: 100%;
+    top: 0;
+}
+
+.main__horarios {
     margin-top: 50px;
     text-align: center;
 }
+
 .horarios__table {
     width: 100%;
     margin-top: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.horarios__th, .horarios__td {
+.horarios__th,
+.horarios__td {
     padding: 12px;
     text-align: left;
 }
@@ -111,18 +149,20 @@ body{
     color: #fff;
 }
 
-.main__trabajadores{
-    margin-top: 50px;
+.main__trabajadores {
+    margin: 50px 0 50px 0;
 }
-.trabajadores__box{
+
+.trabajadores__box {
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
 }
+
 .trabajadores__target {
     position: relative;
     width: 300px;
-    height: 300px;
+    height: 275px;
     background-color: #f0f0f0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -141,48 +181,17 @@ body{
     border-radius: 50%;
     z-index: 1;
 }
-.trabajadores__target--val::before{
+
+.trabajadores__target--val::before {
     background-image: url('../assets/images/valen.jpg');
 }
-.trabajadores__target--man::before{
-    background-image: url('../assets/images/manza.jpg');
+
+.trabajadores__target--man::before {
+    background-image: url('../assets/images/arb.jpg');
 }
 
-/* Footer */
-.footer{ 
-    background-color: black;
-    color: white;
-    margin-top: 100px;
-}
-.footer__marg{
-    margin: 0 auto;
-    max-width: 1080px;
-    display: flex;
-    justify-content: space-between;
-}
-.footer__info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 20px 0 20px 20px;
-}
-.footer__social{
-    display: flex;
-    justify-content: space-evenly;
-}
-.social__link{
-    color: white;
-    font-size: 2rem;
-}
-.social__link:hover{
-    color: #5693F2;
-}
-.info__Link{
-    text-decoration: none;
-    color: white;
-    border-bottom: 1px solid white;
-    width: 70px;
-}
-.info__first{
-    font-weight: bold;
+.trabajadores__info {
+    position: absolute;
+    left: 75px;
+    top: 120px;
 }

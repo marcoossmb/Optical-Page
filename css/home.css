@@ -1,28 +1,30 @@
-body{
+body {
     background-color: whitesmoke;
     font-family: Calibri;
 }
 
-.container{
+.container {
     margin: 0 auto;
     min-width: 480px;
     max-width: 1200px;
-	width: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "header"
         "main"
         "footer";
 }
 
-.header{
+.header {
     grid-area: header;
 }
-.main{
+
+.main {
     grid-area: main;
 }
-.footer{
+
+.footer {
     grid-area: footer;
 }
 
@@ -34,24 +36,28 @@ body{
     top: 0;
     left: 0;
     z-index: 1000;
-    
+
 }
-.header__marg{
+
+.header__marg {
     margin: 0 auto;
     max-width: 1080px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.header__img{
+
+.header__img {
     width: 80px;
     border-radius: 10px;
 }
 
-.header__nav, .header__log{
+.header__nav,
+.header__log {
     font-size: 1.3rem;
     margin-right: 20px;
 }
+
 .header__link {
     color: black;
     text-decoration: none;
@@ -65,14 +71,15 @@ body{
     background-color: #DDF2FF;
 }
 
-.mostrar{
+.mostrar {
     display: block;
 }
-.ocultar{
+
+.ocultar {
     display: none;
 }
 
-.section__log{
+.section__log {
     background-color: white;
     flex-direction: column;
     justify-content: center;
@@ -85,7 +92,8 @@ body{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
 }
-.login__close{
+
+.login__close {
     text-decoration: none;
     color: blue;
     position: absolute;
@@ -93,18 +101,21 @@ body{
     right: 40px;
     font-size: 1.5rem;
 }
-.login__title{
+
+.login__title {
     font-size: 1.5rem;
     margin-left: 100px;
 }
-.log__input{
+
+.log__input {
     padding: 10px;
-    border:0;
+    border: 0;
     border-bottom: 1px solid gainsboro;
     margin-bottom: 20px;
     outline: 0;
 }
-.log__button{
+
+.log__button {
     border-radius: 5px;
     padding: 8px;
     margin-right: 100px;
@@ -113,12 +124,13 @@ body{
     color: #250856;
     transition: background-color 0.5s;
 }
-.log__button:hover{
+
+.log__button:hover {
     background-color: #250856;
     color: #DDF2FF;
 }
 
-.section__buscar{
+.section__buscar {
     background-color: white;
     border-radius: 10px;
     position: absolute;
@@ -127,11 +139,13 @@ body{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     padding: 20px;
 }
-.main{
+
+.main {
     max-width: 1080px;
     margin: 0 auto;
 }
-.main__publi{
+
+.main__publi {
     margin-top: 110px;
     height: 300px;
     width: 90%;
@@ -144,44 +158,50 @@ body{
     margin-bottom: 50px;
     border-radius: 2px;
 }
-.publi__content{
+
+.publi__content {
     padding: 20px;
     width: 300px;
     background-color: #ddf2ffab;
     border-radius: 10px;
 }
 
-.main__winter{
+.main__winter {
     display: flex;
     margin-bottom: 100px;
 }
-.winter__img{
+
+.winter__img {
     height: 200px;
     border-radius: 5px;
     transition: transform 1s;
 }
-.winter__img:hover{
+
+.winter__img:hover {
     transform: scale(1.03);
 }
 
-.winter__eslogan{
+.winter__eslogan {
     height: 200px;
     writing-mode: vertical-rl;
     transform: rotateZ(180deg);
 }
-.winter__h3{
+
+.winter__h3 {
     font-size: 2.3rem;
     margin-left: -50px;
 }
-.winter__h3--first{
+
+.winter__h3--first {
     font-weight: 100;
 }
 
-.winter__info{
+.winter__info {
     text-align: justify;
     margin: 60px 30px 0 120px;
 }
-.winter__button{
+
+.winter__button {
     border-radius: 5px;
     padding: 8px;
     margin-right: 100px;
@@ -191,25 +211,28 @@ body{
     width: 150px;
     transition: background-color 0.5s;
 }
-.winter__button:hover{
+
+.winter__button:hover {
     background-color: #250856;
     color: #DDF2FF;
 }
 
-.main__targets{
+.main__targets {
     margin-bottom: 100px;
 }
-.targets__h3{
+
+.targets__h3 {
     font-size: 2rem;
     text-align: center;
 }
-.target__box{
+
+.target__box {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.target__card{
+.target__card {
     flex: 1 1 100px;
     background-color: white;
     padding: 20px;
@@ -220,70 +243,43 @@ body{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     margin: 20px;
 }
+
 .target__card:hover {
     height: 270px;
 }
+
 .target__card:hover .target__text {
     transition: all 2s;
     opacity: 1;
 }
+
 .target__card:hover .target__price {
     transition: all 2s;
     opacity: 1;
 }
 
-.target__image{
+.target__image {
     height: 200px;
 }
-.target__text{
+
+.target__text {
     font-weight: bold;
     text-align: center;
     opacity: 0;
 }
-.target__price{
+
+.target__price {
     color: rgb(0, 177, 0);
     margin-left: 35px;
     opacity: 0;
 }
 
-/* Footer */
-.footer{ 
-    background-color: black;
-    color: white;
-}
-.footer__marg{
-    margin: 0 auto;
-    max-width: 1080px;
-    display: flex;
-    justify-content: space-between;
-}
-.footer__info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin: 20px 0 20px 20px;
-}
-.footer__social{
-    display: flex;
-    justify-content: space-evenly;
-}
-.social__link{
-    color: white;
-    font-size: 2rem;
-}
-.social__link:hover{
-    color: #5693F2;
-}
-.info__Link{
-    text-decoration: none;
-    color: white;
-    border-bottom: 1px solid white;
-    width: 70px;
-}
-.info__first{
-    font-weight: bold;
-}
-
-.header__log, .header__img, .publi__content, .winter__info, .footer__info--sub, .footer__info--nos, .target__card--last{
+.header__log,
+.header__img,
+.publi__content,
+.winter__info,
+.footer__info--sub,
+.footer__info--nos,
+.target__card--last {
     display: none;
 }

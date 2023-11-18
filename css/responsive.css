@@ -1,15 +1,21 @@
 @media screen and (min-width:600px) {
-    .header__img{
+    .header__img {
         display: block;
     }
-    .header__marg{
+
+    .header__marg {
         justify-content: space-between;
     }
-    .header__link:hover{
+
+    .header__link {
         transition: all 1s;
+    }
+
+    .header__link:hover {
         font-size: 1.5rem;
     }
-    .winter__eslogan{
+
+    .winter__eslogan {
         position: relative;
 
         animation-name: movereslogan;
@@ -17,85 +23,101 @@
         animation-iteration-count: infinite;
         animation-direction: alternate;
     }
+
     @keyframes movereslogan {
-        0%{
+        0% {
             left: 0;
         }
-        100%{
+
+        100% {
             left: 40%;
         }
     }
 }
 
 @media screen and (min-width:706px) {
-    .target__card--last{
+    .target__card--last {
         display: block;
     }
 }
 
 @media screen and (min-width:800px) {
-    .winter__info{
+    .winter__info {
         display: block;
     }
-    .footer__info--nos{
+
+    .footer__info--nos {
         display: block;
         margin-right: 20px;
     }
-    .winter__eslogan{
+
+    .winter__eslogan {
         animation: none;
     }
 }
 
 @media screen and (min-width:936px) {
-    .target__card--last{
+    .target__card--last {
         display: none;
     }
 }
 
 @media screen and (min-width:1024px) {
-    
-    .header__img, .header__log, .publi__content, .footer__info--sub, .footer__info--nos{
+
+    .header__img,
+    .header__log,
+    .publi__content,
+    .footer__info--sub,
+    .footer__info--nos {
         display: block;
     }
 }
 
 @media screen and (min-width:1200px) {
-    .container{
+    .container {
         grid-template-columns: 200px 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "header main"
             "header main"
             "footer footer";
     }
-    .header__log{
+
+    .header__log {
         display: none;
     }
-    .header{
+
+    .header {
         position: relative;
         background: transparent;
     }
-    .header__marg{
+
+    .header__marg {
         flex-direction: column;
     }
-    .header__img{
+
+    .header__img {
         margin: 50px;
         width: 150px;
     }
-    .header__nav{
+
+    .header__nav {
         display: flex;
         flex-direction: column;
         margin: 150px 0 0 0;
     }
-    .header__link{
+
+    .header__link {
         border-radius: 0;
         border-bottom: 1px solid rgba(128, 128, 128, 0.764);
-    }
-    .header__link:hover{
-        background: none;
-        font-weight: bold;
         transition: all 1s;
     }
-    .main__publi{
+
+    .header__link:hover {
+        background: none;
+        font-weight: bold;
+    }
+
+    .main__publi {
         margin-top: 50px;
     }
 }
